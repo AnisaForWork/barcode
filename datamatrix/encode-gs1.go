@@ -33,7 +33,7 @@ func EncodeWithColorGS1(content string, color barcode.ColorScheme) (barcode.Barc
 
 // Encode returns a Datamatrix barcode for the given content
 func EncodeGS1(content string) (barcode.Barcode, error) {
-	return EncodeWithColor(content, barcode.ColorScheme16)
+	return EncodeWithColorGS1(content, barcode.ColorScheme16)
 }
 
 func encodeTextGS1(content string) []byte {
